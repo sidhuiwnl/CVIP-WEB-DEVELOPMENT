@@ -5,35 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
-    <title>Url shortner</title>
+    <title>Url shortener</title>
 </head>
 <body>
-    <main>
-      <div id="header-div" class="">
-         <h1 class="">Url Shortener</h1>
-       </div>
-       
-       <div id="content-div">
-         <div id="input-div">
-           <input type="text" class="text-field content-row" placeholder="Enter the URL here . . ." id="input-field" required/>
-           <button id="shorten" type="button" class="content-row button">Shorten URL</button>
-           <button type="button" id="clear-btn" class="content-row button">Clear</button>
-         </div>
-         
-         <div id="output-div">
-           <div class="content-row" id="new-url-label">Shortened URL:</div>
-           <div id="new-url" class="content-row"></div>
-           <button type="button" id="copy-btn" data-clipboard-target="#new-url" class="content-row button">Copy</button>
-         </div>
-         <div class="" id="error-div">
-            <p class="content-row" id="error-text"></p>
-         </div>
-       </div>
-  
-       </main>
-       
-       
-  
+  <div class="main">
+    <p style="color: black;">URL Shortener</p>
+    <input type="text" placeholder="Enter the Link Here" id="longurl">
+    <button id="shorten">Shorten</button><br>
+    <input type="text" placeholder="Short Link" id="shorturl">
+    
+  </div>
+  <script src="logic.js"></script>
+  <script src="copy.js"></script>
 </body>
+
   
 </html>
